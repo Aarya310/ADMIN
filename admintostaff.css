@@ -1,0 +1,234 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    
+}
+:root {
+    --color-primary: #080098;
+    --color-succcess: #00bf8e;
+    --color-warning: #f7c94b;
+    --color-danger: #f75842;
+    --color-danger-variant: #rgba(247, 88, 66, 0.4);
+    --color-white: #fff;
+    --color-light: #rgba(255, 255, 255, 0.7);
+    --color-black: #000000;
+    --color-bg: #1f2641;
+    --color-bg1: #2e3267;
+    --color-bg2: #424890;
+
+    --container-width-lg: 90%;
+    --container-width-md: 90%;
+    --container-width-sm: 94%;
+
+    --transition: all 400ms ease;
+}
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif, Haettenschweiler, 'Arial Narrow Bold', sans-serif, Times, serif, Cochin, Georgia, Times, 'Times New Roman', serif, Helvetica, sans-serif;
+    line-height: 1.7;
+    /* color: white; */
+    background: rgb(240,240,240);
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+/*Navigation bar */
+nav {
+    background: #080098;
+    width: 100 vw;
+    height: 6rem;
+    position: relative;
+    top: 0;
+    z-index: 11;
+    border-bottom: 0.063rem solid white;
+}
+
+.nav__container {
+    height: 100%;
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    align-content: baseline;
+}
+
+.nav__container a {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: baseline;
+}
+
+nav button {
+    display: none;
+}
+
+.nav__menu {
+    display: flex;
+    align-items: normal;
+    margin-right: 1rem;
+}
+
+.nav__container h5 {
+    color:var(--color-white);
+    font-size: 1.875rem;
+    margin-right: 25rem;
+}
+
+.nav__menu a {
+    display: flex;
+    font-size: 0.9rem;
+    color:var(--color-white);
+    transition: var(--transition);
+}
+
+.nav__menu a:hover {
+    color: var(--color-bg2);
+}
+
+.text-white a {
+    display: flex;
+    font-size: 1.9rem;
+    justify-content: left;
+    align-items: center;
+    margin-left: 0%;
+}
+
+
+/* /Sidebar/ */
+.sidebar{
+    width: 18.75rem;
+    position: fixed;
+    left: 30;
+    top: 40;
+    height: 100%;
+    background: linear-gradient(120deg, #080098, #8e44ad);
+    z-index: 100;
+    transition: all 0s linear;
+}
+
+.sidebar-admin img{
+    margin-top: 0.25rem;
+    margin-left: 18.75rem;
+    max-width: 80%;
+    height:9.375rem ;
+    width: 12.5rem;
+    
+}
+.sidebar-admin h3{
+    height: 5.625rem;
+    padding: 0.063rem 0rem 0rem 18.75rem;
+    color: #fff;
+    font-size: 2.5rem ;
+}
+
+.sidebar-admin span{
+    display: inline-block;
+    padding-right: 1rem;
+}
+
+
+.sidebar-menu li{
+width: 100%;
+margin-bottom: 1.7rem;
+padding-left: 1rem;
+}
+
+.sidebar-menu a{
+    padding-top: 0.25rem;
+    display: block;
+    color: #fff;
+    font-size: 1.438rem;
+    margin-top: 0.313rem;
+}
+
+.sidebar-menu a:hover{
+    border-radius: 0.938rem;
+    padding: 0.125rem 0.125rem 0.125rem 0.25rem;
+  background-color: white;
+  color: #080098;
+  margin: 0.063rem;
+  
+  transition: all 0s linear;
+}
+.sidebar-menu a.active {
+    background: #fff;
+    padding-top:1rem ;
+    padding-bottom: 1rem;
+    color: var(--main-color);
+    border-radius: 1.875rem 0rem 0rem 1.875rem;
+}
+
+header{
+    background-color: #080098;
+    color: white;
+    padding: 1.25rem;
+}
+
+h1{
+    font-size: 2rem;
+    text-align: center;
+}
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh-6.5rem);
+    background: linear-gradient(120deg, #080098, #8e44ad);
+}
+.message-container{
+    max-width: 81.25rem;
+    height:32.68rem ;
+    padding: 1.25rem;
+   
+    border-radius: 0.313rem;
+}
+h2{
+    margin-bottom: 0.625rem;
+    color: #ffffff;
+}
+textarea{
+    width:26.875rem;
+    height: 12.5rem;
+    padding: 0.625rem;
+    border-radius: 0.313rem;
+    border: none;
+    resize: none;
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 1.25rem;
+}
+
+input[type="button"] {
+    color: blue;
+    width: 12.5rem;
+    height: 3.125rem;
+    border: 1px solid;
+    margin-top: 0.938rem;
+    margin-bottom: 1.875rem;
+    margin-left: 4.25rem;
+    padding: 0.938rem 2rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+    background: yellow;
+    border-radius: 1.563rem;
+    font-size: 1.125rem;
+    font-weight: 600;
+    cursor: pointer;
+    outline: none;
+
+    
+}
+
+input[type="button"]:hover {
+    border-color: #ffffff;
+    transition: 0.5s;
+    color: white;
+} 
+

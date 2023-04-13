@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Portal</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="admintostaff.css">
+</head>
+<body>
+ <!-- Navigationa Bar Started -->
+ <nav>
+    <div class="container nav__container">
+        <a href="https://postimg.cc/p9mkfMbR" target="_blank"><img src="https://i.postimg.cc/p9mkfMbR/Mnit-logo.png" alt="Mnit-logo" height="100rem"/></a>
+        <h5 class="text-white">
+            <a class="mnit-english-name">Malaviya National Institute of Technology Jaipur </a>
+            <a class="mnit-hindi-name">मालवीय राष्ट्रीय प्रौद्योगिकी संस्थान जयपुर</a>
+        </h5>
+        <ul class="nav__menu">
+            <li><a href="#" id="logout-button"><i class="fas fa-solid fa-right-to-bracket"></i>&nbsp;logout</a></li>
+        </ul>
+        <button id="open-menu-button"><i class="uil uil-list-ul"></i></button>
+        <button id="close-menu-button"><i class="uil uil-times"></i></button>
+    </div>
+</nav>
+
+<div class="sidebar">
+   
+    <div class="sidebar-menu">
+        <ul>
+            <li>
+                <a href="admin_dashboard.html"><span class="fas fa-igloo"></span>
+                    <span>Dashboard</span></a>
+            </li>
+            <li>
+                <a href="user_list_at_admin.html"><span class="fas  fa-user"></span>
+                    <span>User</span></a>
+            </li>
+            <li>
+                <a href="doctor_list_at_admin.html"><span class="fas fa-solid fa-user-doctor"></span>
+                    <span>Doctor</span></a>
+            </li>
+            <li>
+                <a href="stafflis_at_admint.html"><span class="fas fa-solid fa-clipboard-user"></span>
+                    <span>Medical Staff</span></a>
+            </li>
+            <li>
+                <a href="medicine_stock_at_admin.html"><span class="fas fa-solid fa-pills"></span>
+                    <span>Medicine Stock</span></a>
+            </li>
+        </ul>
+    </div>
+</div>
+ 
+<header>
+    <h1>Message</h1>
+</header>
+<main>
+<div class="message-container">
+    <h2>Name </h2>
+    <textarea name="message" id="message" cols="30" rows="10"></textarea><br>
+    <input type="button" value="Send">
+</div>
+</main>
+
+
+<script>
+    
+    // Get a reference to the logout button
+const logoutButton = document.getElementById("logout-button");
+
+// Add a click event listener to the logout button
+logoutButton.addEventListener("click", function() {
+  // Clear any saved login credentials
+  localStorage.removeItem("username");
+  localStorage.removeItem("password");
+  
+  // Redirect the user to the login page
+  window.location.href = "admin_logins.html";
+});
+</script>
+</body>
+</html>

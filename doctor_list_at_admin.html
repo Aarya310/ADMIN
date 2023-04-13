@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Portal</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="/doctor_list_at_admin.css">
+</head>
+<body>
+    <!-- Navigationa Bar Started -->
+    <nav>
+        <div class="container nav__container">
+            <a href="https://postimg.cc/p9mkfMbR" target="_blank"><img src="https://i.postimg.cc/p9mkfMbR/Mnit-logo.png" alt="Mnit-logo" height="100rem"></a>
+            <h5 class="text-white">
+                <a class="mnit-english-name">Malaviya National Institute of Technology Jaipur </a>
+                <a class="mnit-hindi-name">मालवीय राष्ट्रीय प्रौद्योगिकी संस्थान जयपुर</a>
+            </h5>
+            <ul class="nav__menu">
+                <li><a href="#" id="logout-button"><i class="fas fa-solid fa-right-to-bracket"></i>&nbsp;logout</a></li>
+            </ul>
+            <button id="open-menu-button"><i class="uil uil-list-ul"></i></button>
+            <button id="close-menu-button"><i class="uil uil-times"></i></button>
+        </div>
+    </nav>
+<div class="sidebar">
+   
+    <div class="sidebar-menu">
+        <ul>
+            <li>
+                <a href="/admin_dashboard.html"><span class="fas fa-igloo"></span>
+                    <span>Dashboard</span></a>
+            </li>
+            <li>
+                <a href="/user_list_at_admin.html"><span class="fas  fa-user"></span>
+                    <span>User</span></a>
+            </li>
+            <li>
+                <a href="/admin_dashboard.html"><span class="fas fa-solid fa-user-doctor"></span>
+                    <span>Doctor</span></a>
+            </li>
+            <li>
+                <a href="/stafflis_at_admint.html"><span class="fas fa-solid fa-clipboard-user"></span>
+                    <span>Medical Staff</span></a>
+            </li>
+            <li>
+                <a href="/medicine_stock_at_admin.html"><span class="fas fa-solid fa-pills"></span>
+                    <span>Medicine Stock</span></a>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<div class="table">
+    <div class="table_header">
+        <p>Doctor's Details</p>
+        <div>
+            <input placeholder="search">
+            <!-- <button class="add_new">+ Add New Medicine</button>  -->
+        </div>
+    </div>
+    <div class="table_section">
+        <table>
+            <thead>
+                <tr>
+                    <th>S No.</th>
+                    <th>Name</th>
+                    <th>Id</th>
+                    <th>Phone No.</th>
+                    <th>Gender</th>
+                    <th>Type</th>
+                    <th>Age</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Dr. Ashish Bhartiya</td>
+                    <td>2021UCPXXXX</td>
+                    <td>8530595467</td>
+                    <td>Male</td>
+                    <td>M.D Medicine</td>
+                    <td>23</td>
+                    <td>
+                   <a href="" class="a1">     <button>View Feedback</button></a>
+                       <a class="a2" href="/admintodoctor.html"> <button onclick="myFunction">Send Message</button></a>
+                        <!-- <button>Send Message</button> -->
+                    </td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Dr. Meenu</td>
+                    <td>2021UCPXXXX</td>
+                    <td>8530595467</td>
+                    <td>Male</td>
+                    <td>Pediatician</td>
+                    <td>23</td>
+                    <td>
+                       <a href="" class="a1"> <button>View Feedback</button></a>
+                       <a class="a2" href="/admintodoctor.html"><button onclick="myFunction">Send Message</button> </a>
+                        <!-- <button>Send Message</button> -->
+                    </td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Dr.Mini Bhargava</td>
+                    <td>2021UCPXXXX</td>
+                    <td>8530595467</td>
+                    <td>Male</td>
+                    <td>Gynecologist</td>
+                    <td>23</td>
+                    <td>
+                    <a href="" class="a1">   <button>View Feedback</button></a>
+                      <a class="a2" href="/admintodoctor.html"> <button onclick="myFunction">Send Message</button></a> 
+                        <!-- <button>Send Message</button> -->
+                    </td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Dr. Atul Goyal</td>
+                    <td>2021UCPXXXX</td>
+                    <td>8530595467</td>
+                    <td>Male</td>
+                    <td>Orthopedic</td>
+                    <td>23</td>
+                    <td>
+                       <a href="" class="a1"> <button>View Feedback</button></a>
+                       <a class="a2" href="/admintodoctor.html"> <button onclick="myFunction">Send Message</button></a>
+                        <!-- <button>Send Message</button> -->
+                    </td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Dr. Rahul Sharma</td>
+                    <td>2021UCPXXXX</td>
+                    <td>8530595467</td>
+                    <td>Male</td>
+                    <td>Cardiologist</td>
+                    <td>23</td>
+                    <td>
+                       <a href="" class="a1"> <button>View Feedback</button></a>
+                        <a class="a2" href="/admintodoctor.html"><button onclick="myFunction">Send Message</button></a>
+                        <!-- <button>Send Message</button> -->
+                    </td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>Dr.Mukul Gupta</td>
+                    <td>2021UCPXXXX</td>
+                    <td>8530595467</td>
+                    <td>Male</td>
+                    <td>Endocrinologist</td>
+                    <td>23</td>
+                    <td>
+                       <a href="" class="a1"> <button>View Feedback</button></a>
+                        <a class="a2" href="/admintodoctor.html"><button onclick="myFunction">Send Message</button></a>
+                        <!-- <button>Send Message</button> -->
+                    </td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>Dr. Sankalp Awathi</td>
+                    <td>2021UCPXXXX</td>
+                    <td>8530595467</td>
+                    <td>Male</td>
+                    <td>Skin Specialist</td>
+                    <td>23</td>
+                    <td>
+                        <a href="" class="a1"><button>View Feedback</button></a>
+                        <a class="a2" href="/admintodoctor.html"><button onclick="myFunction">Send Message</button></a>
+                        <!-- <button>Send Message</button> -->
+                    </td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>Dr. H.P. Moond</td>
+                    <td>2021UCPXXXX</td>
+                    <td>8530595467</td>
+                    <td>Male</td>
+                    <td>Homeopathy</td>
+                    <td>23</td>
+                    <td>
+                       <a href="" class="a1"><button>View Feedback</button></a> 
+                      <a class="a2" href="/admintodoctor.html">  <button onclick="myFunction">Send Message</button></a>
+                        <!-- <button>Send Message</button> -->
+                    </td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td>Vaidya Bhaskar Sharma</td>
+                    <td>2021UCPXXXX</td>
+                    <td>8530595467</td>
+                    <td>Male</td>
+                    <td>Ayurveda</td>
+                    <td>23</td>
+                    <td>
+                       <a href="" class="a1"><button>View Feedback</button></a> 
+                      <a class="a2" href="/admintodoctor.html">  <button onclick="myFunction">Send Message</button></a>
+                        <!-- <button>Send Message</button> -->
+                    </td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td>Dr. Sanjay Garg</td>
+                    <td>2021UCPXXXX</td>
+                    <td>8530595467</td>
+                    <td>Male</td>
+                    <td>Physiotherapist</td>
+                    <td>23</td>
+                    <td>
+                       <a href="" class="a1"><button>View Feedback</button></a> 
+                      <a class="a2" href="/admintodoctor.html">  <button onclick="myFunction">Send Message</button></a>
+                        <!-- <button>Send Message</button> -->
+                    </td>
+                </tr>
+                
+            </tbody>
+        </table>
+    </div>
+
+</div>
+<script src="doctor_list_at_admin.js"></script>
+</body>
+</html>
